@@ -14,10 +14,12 @@ body{
     background-color: var(--bk-background);
     font-weight: 300;
     margin: 0.5em;
+    position: relative;
 }
 h1{
     text-align: center;
 }
+
 h1, h2, h3, h4 {
     font-family: inherit;
     font-weight: 300;
@@ -48,4 +50,14 @@ a{
 }
 a:visited{
     color: var(--bk-link);
+}
+
+.articleDate{
+    position: absolute;
+    top: 1em;
+    right: 3em;
+    margin: 1em;
+}
+.articleDate::before{
+    content: "posted ";
 }
