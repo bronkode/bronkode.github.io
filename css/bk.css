@@ -1,0 +1,27 @@
+body{
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #ebebeb;
+    background-color: #2b3e50;
+    font-weight: 300;
+}
+h1{
+    text-align: center;
+}
+h1, h2, h3, h4 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.1;
+    color: inherit;
+}
+div{
+    font-family: inherit;
+}
+
+.bkgreen {
+    color: #5cb85c;
+}
+footer{
+    margin-top: 10%;
+}
