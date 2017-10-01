@@ -1,18 +1,47 @@
 <html>
 
 <head>
-    <title>BK - Why we should use standards only in development</title>
+    <title>BK - Standard standards are standard</title>
     <link rel="stylesheet" href="../css/bk.css">
+    <base target="_blank">
 </head>
 
 <body>
-    <h1 class="text-center"><big class="bkgreen">{</big>bronkode<big class="bkgreen">}</big></h1>
+    <h1><big class="bkgreen">{</big>bronkode<big class="bkgreen">}</big></h1>
+    <h2>Learn standards, not frameworks</h2>
 
-    <h3>Why we should use standards only</h3>
-    <h4>(or why frameworkds should die)</h4>
-    <footer>
-        <span>hosted on github pages</span>
-    </footer>
+    <p>
+        Regardless of the language / tools you use to develop, the closer you stick to the standard, the easier maintenance and future
+        updates will be. The only issue with standards is that little 's' at the end - Standards are not always standard.
+        You will know this if you ever created a webpage only to find your CSS not interpreted the same on all browsers.
+        You can bang your head against the wall to try and reach every browser out there, or use a radical approach...
+        <br> Only support the W3C standard ( <a href='https://www.w3.org/standards/' target="_blank">https://www.w3.org/standards/</a>)
+        <br>I know you want to reach as large an audience as possible, but think about it - your job is to develop a website,
+        not to develop shims / polyfills to adress a browser vendors bad implementation. The only polyfill you should have is
+        to test the browser and inform them they should upgrade to the latest version or switch browsers altogether. If everyone
+        does this, and the general public gets educated about their favourite browser's deficiencies it might just cause
+        the 4 giant browsers to better implement the standard rather than risk losing customers (read ad views).
+        <br> The web standard really matured these last couple of years, making libraries like jquery obsolete - 
+        the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a>        
+        makes it easy to use css style selectors to find elements in javascript, 
+        and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">fetch()</a> api makes calling rest 
+        endpoints a breeze.
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">Template Literals</a> 
+        are a great alternative to templating engines / ui frameworks, and bidirectional databinding is easy to implement
+        yourself as illustrated <a href="https://gist.github.com/austinhyde/4321f22a476e1cbee65f">here</a>.
+    </p>
+    <p>
+        When you learn a framework you are locked in to that vendors vision of the web, usually with an "all or nothing"
+        approach. While documentation on (the big) frameworks have greatly imporved over the last few years, the difference with standards are that the specification comes first, and
+        implementation comes second. When using standards you actually have direct access to the original specification, vs 
+        the document author's interpretation of the developers interpretation of the specification.
+    </p>
+    <p>
+        Specification first is not without its drawbacks - there is nothing like discovering a perfect feature to solve
+        a problem, only to see it is still experimental or under review. Defnitively stay AWAY from features that are not
+        yet accepted into the standard - you can get away with forcing cutting edge stable features on your clients, but not bleeding edge.
+    </p>
+    <footer/>
 </body>
 
 </html>

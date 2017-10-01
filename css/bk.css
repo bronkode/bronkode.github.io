@@ -1,10 +1,19 @@
+:root {
+    --bk-green: #5cb85c;
+    --bk-background: #2b3e50;
+    --bk-text: #ebebeb;
+    --bk-link: wheat;
+  }
+
+
 body{
     font-family: "Helvetica Neue";
     font-size: 15px;
     line-height: 1.42857143;
-    color: #ebebeb;
-    background-color: #2b3e50;
+    color: var(--bk-text);
+    background-color: var(--bk-background);
     font-weight: 300;
+    margin: 0.5em;
 }
 h1{
     text-align: center;
@@ -19,9 +28,24 @@ div{
     font-family: inherit;
 }
 
+p{
+    margin: 1em 2em;
+}
+
 .bkgreen {
-    color: #5cb85c;
+    color: var(--bk-green);
 }
 footer{
     margin-top: 10%;
+ }
+footer::after{
+    margin-top: 10%;
+    content: "hosted on github pages";
+}
+
+a{
+    color: var(--bk-link);
+}
+a:visited{
+    color: var(--bk-link);
 }
