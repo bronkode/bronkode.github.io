@@ -1,7 +1,7 @@
 document.querySelectorAll("h1")
 .forEach(h => makeLink(h,"http://blog.bronkode.co.za"));
 
-document.querySelectorAll(".articleDate")
+document.querySelectorAll("[data-bk-template]")
 .forEach(d => fillTemplate(d));
 
 
